@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>穷</title>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="title">恭喜发财 红包拿来</div>
+
+<div class="content">
+
+<br><br>
+
+<div class="search">
+
+<input type="text" id="sl" maxlength="5" oninput="value=value.replace(/[^\d]/g,'');" placeholder="点券数量">
+
+<button type="submit" class="submit" onclick="tj()">打赏</button>
+
+</div>
+
+<br><br>
+
+<img src="q.gif">
+
+<br><br>
+
+<p>求好心人给点，一毛也是爱。滴水之恩，定当涌泉相报。</p>
+
+</div>
+
+</div>
+
+<script>
+function tj(){
+        var sl = document.getElementById("sl").value;
+        if(sl.length>0){}else{alert("请输入正确数量");return false;}
+        var sll = Number(sl);
+   //  alert(sll);
+	window.location.href = 'https://pay.qq.com/h5/index.shtml?m=buy&c=game&dialog=0&midasApiVersion=5&transactionid=CC8E5656-EEC9-4ADD-865E-D4D81C258D691558348901265&dh=1&pf=mds_storeopen_qb-__mds_default_v1_0_0.navgame_v1.0-android&appid=1450002258&zoneid=1176&n='+sll+'&as=1&aid=&wxAppid2=wx951bdcac522929b6&u=1806396827';
+};
+</script>
+
+</body>
+
+</html>
