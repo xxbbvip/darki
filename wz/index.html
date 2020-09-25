@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>王者荣耀充值小工具</title>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="title">王者荣耀充值小工具</div>
+
+<div class="content">
+
+<br>
+
+ Q Q :
+
+<input type="text" class="input" name="qq" id="qq" maxlength="10" oninput="value=value.replace(/[^\d]/g,'');">
+
+<br><br>
+
+大区:
+
+<input type="text" class="input" name="dq" id="dq" maxlength="3" oninput="value=value.replace(/[^\d]/g,'');">
+
+<br><br>
+
+点券:
+
+<input type="text" class="input" name="sl" id="sl" maxlength="5" oninput="value=value.replace(/[^\d]/g,'');">
+
+<br><br>
+
+<input type="submit" value="生成链接" class="submit" onclick="tijiao()">
+
+<br><br>
+
+<a href="#" class="link" id="sc"></a>
+
+</div>
+
+</div>
+
+<script>
+function tijiao(){
+        var qq = document.getElementById("qq").value;
+        var dq = document.getElementById("dq").value;
+        var sl = document.getElementById("sl").value;
+        if(qq.length>0 && dq.length>0 && sl.length>0){}else{alert("请输入完整内容");return false;}
+        var dq = Number(dq) + Number(1010);
+        var lianjie = "https://pay.qq.com/h5/index.shtml?m=buy&c=game&dialog=0&midasApiVersion=5&transactionid=CC8E5656-EEC9-4ADD-865E-D4D81C258D691558348901265&dh=1&pf=mds_storeopen_qb-__mds_default_v1_0_0.navgame_v1.0-android&appid=1450002258&zoneid=" + dq + "&n="+sl+"&as=1&aid=&wxAppid2=wx951bdcac522929b6&u="+qq
+        var lianjie2 = "https://pay.qq.com/h5/index.shtml?m=buy&c=game&dialog=0&midasApiVersion=5&transactionid=CC8E5656-EEC9-4ADD-865E-D4D81C258D691558348901265&dh=1&pf=mds_storeopen_qb-__mds_default_v1_0_0.navgame_v1.0-android&appid=1450002258&zoneid=<span style='color: rgb(255, 0, 0);'>" + dq + "</span>&n=<span style='color: rgb(255, 0, 0);'>"+sl+"</span>&as=1&aid=&wxAppid2=wx951bdcac522929b6&u=<span style='color: rgb(255, 0, 0);'>"+qq+"</span>"
+        $('#sc').attr('href',lianjie)
+        $("#sc").html(lianjie2) }
+</script> 
+
+</body>
+
+</html>
