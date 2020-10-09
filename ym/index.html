@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>域名注册局信息查询</title>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="title">域名注册局信息查询</div>
+
+<div class="content">
+
+<br><br>
+
+<div class="search">
+
+<input type="text" id="hz" oninput="value=value.replace(/[^a-z]/g,'');" placeholder="域名后缀">
+
+<button type="submit" class="submit" onclick="tj()"><i class="fa fa-search"></i></button>
+
+</div>
+
+<br><br>
+
+<p>查询某后缀域名注册局的联系方式，用作各种PY</p>
+
+</div>
+
+</div>
+
+<script>
+function tj(){
+        var hz = document.getElementById("hz").value;
+        if(hz.length>0){}else{alert("请输入正确内容");return false;}
+        var hzs = String(hz);
+   //  alert(sll);
+	window.location.href = 'https://www.iana.org/domains/root/db/'+hzs+'.html';
+};
+</script>
+
+</body>
+
+</html>
