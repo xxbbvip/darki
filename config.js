@@ -33,11 +33,11 @@ window.Config = {
   // 导航栏菜单
   Navi: [
     {
-      text: 'Dark's blog,
+      text: '博客',
       url: 'https://ii.do/'
     },
     {
-      text: '黑客米表',
+      text: '米表',
       url: 'http://hacker.hk/'
     }
   ]
