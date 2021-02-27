@@ -2,7 +2,7 @@
 window.Config = {
 
   // 站点名
-  SiteName: '站点运行状况',
+  SiteName: 'Dark',
 
   // 站点链接
   SiteUrl: 'https://darki.gitee.io/',
@@ -33,12 +33,12 @@ window.Config = {
   // 导航栏菜单
   Navi: [
     {
-      text: 'Homepage',
-      url: 'https://status.org.cn/'
+      text: 'Dark's blog,
+      url: 'https://ii.do/'
     },
     {
-      text: 'GitHub',
-      url: 'https://github.com/yb/uptime-status'
+      text: '黑客米表',
+      url: 'http://hacker.hk/'
     }
   ]
 };
