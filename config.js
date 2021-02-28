@@ -2,7 +2,7 @@
 window.Config = {
 
   // 站点名
-  SiteName: 'Dark',
+  SiteName: 'Status',
 
   // 站点链接
   SiteUrl: 'https://darki.gitee.io/',
@@ -35,7 +35,7 @@ window.Config = {
     },
     {
       text: '米表',
-      url: 'http://hacker.hk/'
+      url: 'https://hacker.hk/'
     }
   ]
 };
