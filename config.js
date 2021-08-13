@@ -35,7 +35,7 @@ window.Config = {
     },
     {
       text: '米表',
-      url: 'https://hacker.hk/'
+      url: 'https://ii.do/mi.html'
     }
   ]
 };
